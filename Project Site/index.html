@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Site</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/scroll_navi.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".menu").scroll_navi();
+		});
+	</script>
+	<script type="text/javascript">
+					$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top-40
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+	</script>
+	<script type="text/javascript">
+			$(function(){
+    			$('.menu a').click(function () {
+        			$('.menu a').removeClass('active');
+        			$(this).addClass('active');
+     			});
+			 });
+	</script>
+	<script type="text/javascript" src="js/highlight.js"></script>
+</head>
+<body id="home">
+	<div id="container">
+		<header id="tTop">
+			
+		</header>
+		<div class="menu">
+			<nav>
+				<ul id="top-menu">
+					<li class="active"><a href="#tTop">Home</a></li>
+					<li><a href="#top">X-11</a></li>
+					<li><a href="#page1" class="btc">SHA-256</a></li>
+					<li><a href="#page2" Class="ltc">Scrypt</a></li>
+					<li><a href="#page3" class="vtc">Scrypt-N</a></li>
+				</ul>
+			
+			</nav>
+		</div>
+		<div id="top">
+		<a class="scroll" href="#top">Top</a>
+			<div class="subContainer"
+				<br />
+				<img src="images/x11.png">
+				<div id="x11">
+				<article>X11 is proof of work algorithm that uses 11 different hashing functions to calculate the block header. The algorithm was developed by Evan Duffield, the creator of Darkcoin. X11 was intended to be ASIC resistant to keep mining CPU and GPU friendly. Critics cite that ASICs are possible though and will be much power powerful than scrypt ASICs.
+				<br />
+				<br />
+				X11 suffers from the problems stemming from increased propagation latency and slow verification, and adds even worse susceptibility to ASIC advantage. It is a mere mishmash of 11 separate algorithms that are now GPU mineable (according to Darkcoin’s homepage). Anything GPU mineable can be implemented in custom hardware. To make matters worse, ASIC’s could even have a major speedup advantage over GPU’s. adam3mus said, it does seem likely that eg if the unused space due to heat can be filled with the other hashes, then it can all be pipelined together and no slowdown. the only cost is replicating different hash functions which doesnt seem particularly hard.
+				<br />
+				<br />
+				So a switch to X11 only delays the inevitable. Switching the hash to X11 would only spite the current manufacturers while ultimately failing in the goal of preventing ASIC’s later. It gets even worse. If the cost of entry for a particular PoW is very high by design, that increases the chance of fewer competing manufacturers entering a market. This is the worst possible outcome for any Bitcoin-like network that relies upon large quantities of greedy miners to outdo each other to maintain network security.
+				</article>
+				</div>
+			</div>
+		</div>
+		<div id="page1">
+		<a class="scroll" href="#page1">Page1</a>	
+		</div>
+		<div id="page2">
+		<a class="scroll" href="#page2">Page2</a>
+		</div>
+		<div id="page3">
+		<a class="scroll" href="#page3">Page3</a>
+		</div>
+	</div>
+</body>
+</html>
