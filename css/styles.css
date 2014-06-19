@@ -1,0 +1,117 @@
+body,h1,h2,h3,p,ul,ol,li{
+  padding: 0;
+  margin: 0;
+}
+
+/* Animations */
+
+/* Animations */
+@keyframes menuAnimation{
+  from{left:1000px;}
+  to{left: 0;}
+}
+
+@keyframes titleAnimation{
+  from{left: 1000px;}
+  to{left: 0;}
+}
+
+body {
+  color: #222;
+  font: 12px/20px Helvetica, Arial, sans-serif;
+  background: url(../images/background.png);
+}
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-bottom: 20px;
+}
+#section-1{
+  background: url("../images/titlepage.jpg");
+  background-size: 100%;
+  height: 100vh;
+  width: 100vw;
+  animation: titleAnimation 1s;
+}
+#navMenu{
+  width: 100%;
+  min-height: 30px;
+  background-color: #292A24;
+  position: fixed;
+  clear: both;
+  opacity: .80;
+  animation: menuAnimation 1s;
+}
+#nav {
+  left: 20px;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  opacity: .80;
+  animation: menuAnimation 1s;
+}
+#nav li {
+  margin-bottom: 2px;
+  float: left;
+}
+#nav a {
+  background: #292A24;
+  color: #666;
+  display: block;
+  font-size: 11px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#nav a:hover {
+  background: #dedede;
+}
+#nav .current a {
+  background: #666;
+  color: #ededed;
+}
+.current {
+  background: red;
+}
+#container {
+  margin: 0 auto;
+  width: 100%;
+}
+.section {
+  border-bottom: 5px solid #ccc;
+  padding: 30px;
+  width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+  min-height: 500px;
+}
+.section p:last-child {
+  margin-bottom: 0;
+}
+/* a link styles */
+
+.section a:visited{
+  color: #ccc;
+}
+
+.section a:link{
+  color: #fff;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1000px){
+  #container{
+    width: 100%;
+  }
+}
+
+/* btc.html styles */
+
+#btc{
+  background: url(../images/background.png);
+  
+}
